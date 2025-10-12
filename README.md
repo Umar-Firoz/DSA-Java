@@ -1,3 +1,3 @@
 # DSA-Java
-<h1> This Repo conatains function only. </h1>
+<h1> This Repo contains functions only. </h1>
 

@@ -1,4 +1,4 @@
-public class No_2_Palindrome {
+public class No_14_Palindrome {
     public boolean isPalindrome(int x) {
         int i=x;
         int rev=0;
