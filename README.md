@@ -1,2 +1,2 @@
 # DSA-Java
-Java
+This Repo conatains function only.
