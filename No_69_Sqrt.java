@@ -31,3 +31,4 @@ public class No_69_Sqrt {
         return right;
     }
 }
+
