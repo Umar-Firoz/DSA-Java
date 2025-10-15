@@ -6,7 +6,7 @@ public class No_1732_Highest_Altitude {
         {
             gain[i]=gain[i]+gain[i-1];
             if(gain[i]>max){
-                max=gain[i];
+               max=gain[i];
             }
         }
         if(max<0)
