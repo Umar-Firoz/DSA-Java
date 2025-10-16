@@ -1,4 +1,4 @@
-class Solution {
+class No_867_Transpose_Matrix {
     public int[][] transpose(int[][] matrix) {
         int rows = matrix.length;
         int cols = matrix[0].length;
