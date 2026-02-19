@@ -4,12 +4,14 @@ class Solution {
         int c=0;
         int max=0;
         for(int r=0;r<s.length();r++){
-            if(s.charAt(r)=='a'||s.charAt(r)=='e'||s.charAt(r)=='i'||s.charAt(r)=='o'||s.charAt(r)=='u')
+            if(max==k)
+                return k;
+            if(isVowel(s.charAt(r)))
             {
                 c++;
             }
             if(r-l+1>k){
-                 if(s.charAt(l)=='a'||s.charAt(l)=='e'||s.charAt(l)=='i'||s.charAt(l)=='o'||s.charAt(l)=='u'){
+                 if(isVowel(s.charAt(l))){
                     c--;
                  }
                  l++;
@@ -17,5 +19,8 @@ class Solution {
             max=Math.max(max,c);
         }
         return max;
+    }
+    static boolean isVowel(char ch) {
+    return ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u';
     }
 }
