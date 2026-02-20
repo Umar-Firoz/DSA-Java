@@ -1,30 +1,16 @@
 class Solution {
     public int divisorSubstrings(int num, int k) {
-
-        int c = 0;
         String s = String.valueOf(num);
-        int l = 0;
-        int r = 0;
-        String combined = "";
-
-        while (r < s.length()) {
-
-            combined += s.charAt(r);  
-
-            if (r - l + 1 == k) {
-
-                int n = Integer.parseInt(combined);
-
-                if (n != 0 && num % n == 0)
-                    c++;
-
-                combined = combined.substring(1); 
-                l++;
+        int count = 0;
+        for(int i =0;i<= s.length() - k;i++){
+            String sub = s.substring(i,i+k);
+            int subNum = Integer.parseInt(sub);
+            if(subNum != 0 && num % subNum == 0){
+                count ++;
             }
 
-            r++;
         }
 
-        return c;
+        return count;
     }
 }
