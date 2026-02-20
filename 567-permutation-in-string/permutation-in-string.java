@@ -1,41 +1,50 @@
 class Solution {
+
     public boolean checkInclusion(String s1, String s2) {
 
-        if (s1.length() > s2.length())
+        int len1 = s1.length();
+        int len2 = s2.length();
+
+        if (len1 > len2)
             return false;
 
-        HashMap<Character, Integer> map1 = new HashMap<>();
-        HashMap<Character, Integer> map2 = new HashMap<>();
+        int[] pattern = new int[26];   // frequency of s1
+        int[] window  = new int[26];   // frequency of current window in s2
 
-        
-        for (int i = 0; i < s1.length(); i++) {
-            map1.put(s1.charAt(i), map1.getOrDefault(s1.charAt(i), 0) + 1);
+        // Step 1: Build frequency for s1
+        for (int i = 0; i < len1; i++) {
+            pattern[s1.charAt(i) - 'a']++;
         }
 
-        int l = 0;
+        int left = 0;
 
-        for (int r = 0; r < s2.length(); r++) {
+        // Step 2: Slide window over s2
+        for (int right = 0; right < len2; right++) {
 
-            map2.put(s2.charAt(r),
-                     map2.getOrDefault(s2.charAt(r), 0) + 1);
+            // Add current character to window
+            window[s2.charAt(right) - 'a']++;
 
-            if (r - l + 1 > s1.length()) {
-
-                map2.put(s2.charAt(l),
-                         map2.get(s2.charAt(l)) - 1);
-
-                if (map2.get(s2.charAt(l)) == 0)
-                    map2.remove(s2.charAt(l));
-
-                l++;
+            // If window size exceeds len1, remove left character
+            if (right - left + 1 > len1) {
+                window[s2.charAt(left) - 'a']--;
+                left++;
             }
 
-            if (r - l + 1 == s1.length()) {
-                if (map1.equals(map2))
+            // If window size equals len1, compare frequencies
+            if (right - left + 1 == len1) {
+                if (areEqual(pattern, window))
                     return true;
             }
         }
 
         return false;
+    }
+
+    private boolean areEqual(int[] a, int[] b) {
+        for (int i = 0; i < 26; i++) {
+            if (a[i] != b[i])
+                return false;
+        }
+        return true;
     }
 }
