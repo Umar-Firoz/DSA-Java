@@ -12,8 +12,9 @@ class Solution {
             int rem=ps[i]%k;
             if(rem==0)
                 c++;
-             if(rem< 0)
+             if(rem< 0){
                 rem += k;    
+             }
             if(map.containsKey(rem))
             {
                 c+= map.get(rem);
