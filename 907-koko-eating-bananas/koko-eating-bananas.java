@@ -21,10 +21,11 @@ class Solution {
        static boolean check(int[] arr,int k,int hours){
         int h=0;
         for(int i : arr){
-            if(i<=k)
-                h+=1;
-            else
-                h+= (int) Math.ceil((double)i / k);
+            h+=(i+k-1)/k;
+            // if(i<=k)
+            //     h+=1;
+            // else
+            //     h+= (int) Math.ceil((double)i / k);
         }
         return h <= hours;
     }
