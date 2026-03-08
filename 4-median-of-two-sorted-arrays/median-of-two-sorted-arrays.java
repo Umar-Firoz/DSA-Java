@@ -1,7 +1,9 @@
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-
-        int m = nums1.length;
+///this is the the optimal .
+//i dont i will ever be able to solve this in Log(m+n) not even in y dream even if i memorize the soln still i will make mistake in real interview.
+// BEST APPROACH - DONT SOLVE THIS FUKING QUESTION.
+        int m = nums1.length; 
         int n = nums2.length;
 
         int[] merged = new int[m+n];
