@@ -1,7 +1,6 @@
 class Solution {
     public String reverseVowels(String s) {
         char[] ch=s.toCharArray();
-        String str="";
         int l=0;
         int r=s.length()-1;
         while(l<r){
@@ -18,10 +17,7 @@ class Solution {
             if(!isVowel(ch[r]))
                 r--; 
         }
-        for(int i=0;i<ch.length;i++){
-            str+=ch[i];
-        }
-        return str;
+        return new String(ch);
     }
     static boolean isVowel(char c)
     {
