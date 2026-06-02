@@ -35,14 +35,14 @@ jobs:
           sed -i "s/HARD_COUNT/$HARD/g" README.md
 
       - name: Commit Changes
-  run: |
-    git config user.name "github-actions"
-    git config user.email "github-actions@github.com"
-
-    git add README.md
-
-    git diff --cached --quiet || git commit -m "Update LeetCode stats"
-
-    git pull --rebase origin main
-
-    git push origin main
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+      
+          git add README.md
+      
+          git diff --cached --quiet || git commit -m "Update LeetCode stats"
+      
+          git pull --rebase origin main
+      
+          git push origin main
