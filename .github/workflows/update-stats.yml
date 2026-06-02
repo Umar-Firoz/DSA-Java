@@ -5,39 +5,42 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Count Problems
+      - name: Calculate Statistics
         run: |
-          TOTAL=$(find . -name README.md | grep -v "./README.md" | wc -l)
+          TOTAL=$(find . -mindepth 1 -maxdepth 1 -type d ! -name ".git" ! -name ".github" | wc -l)
 
-          EASY=$(grep -R "Difficulty Easy" . --include="README.md" | wc -l)
-          MEDIUM=$(grep -R "Difficulty Medium" . --include="README.md" | wc -l)
-          HARD=$(grep -R "Difficulty Hard" . --include="README.md" | wc -l)
+          EASY=$(grep -R "Difficulty-Easy" . --include="README.md" | wc -l)
+          MEDIUM=$(grep -R "Difficulty-Medium" . --include="README.md" | wc -l)
+          HARD=$(grep -R "Difficulty-Hard" . --include="README.md" | wc -l)
 
-          sed -i "s/| Total Solved | Easy 🟢 | Medium 🟟 | Hard 🔴 |/| Total Solved | Easy 🟢 | Medium 🟡 | Hard 🔴 |/" README.md
+          sed -i "s/TOTAL_SOLVED/[0-9]/$TOTAL/g" README.md || true
+          sed -i "s/EASY_COUNT/[0-9]/$EASY/g" README.md || true
+          sed -i "s/MEDIUM_COUNT/[0-9]/$MEDIUM/g" README.md || true
+          sed -i "s/HARD_COUNT/[0-9]/$HARD/g" README.md || true
 
-          sed -i "/| Total Solved | Easy 🟢 | Medium 🟡 | Hard 🔴 |/{n;s/.*/| $TOTAL | $EASY | $MEDIUM | $HARD |/;}" README.md
-
-          sed -i "/Easy   :/c\Easy   : $EASY" README.md
-          sed -i "/Medium :/c\Medium : $MEDIUM" README.md
-          sed -i "/Hard   :/c\Hard   : $HARD" README.md
+          sed -i "s/TOTAL_SOLVED/$TOTAL/g" README.md
+          sed -i "s/EASY_COUNT/$EASY/g" README.md
+          sed -i "s/MEDIUM_COUNT/$MEDIUM/g" README.md
+          sed -i "s/HARD_COUNT/$HARD/g" README.md
 
       - name: Commit Changes
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
 
           git add README.md
 
-          git diff --cached --quiet || git commit -m "Update repository stats"
+          git diff --cached --quiet || git commit -m "Update LeetCode stats"
 
           git push
