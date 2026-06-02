@@ -12,10 +12,10 @@ Building strong problem-solving skills through consistent Data Structures & Algo
 
 ## 📊 LeetCode Progress
 
-- 🎯 Total Solved: TOTAL_SOLVED
-- 🟢 Easy: EASY_COUNT
-- 🟡 Medium: MEDIUM_COUNT
-- 🔴 Hard: HARD_COUNT
+- 🎯 Total Solved: 105
+- 🟢 Easy: 47
+- 🟡 Medium: 53
+- 🔴 Hard: 5
 
 ---
 
