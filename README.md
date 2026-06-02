@@ -10,7 +10,7 @@
 ## 📊 Progress Tracker
 
 | Total Solved | Easy 🟢 | Medium 🟡 | Hard 🔴 |
-|-------------|----------|-----------|---------|
+| 0 | 0 | 0 | 0 |
 | 0 | 0 | 0 | 0 |
 
 > These statistics are automatically updated using GitHub Actions.
