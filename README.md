@@ -12,7 +12,7 @@ A curated collection of Data Structures & Algorithms problems solved using Java.
 
 | 🎯 Total Solved | 🟢 Easy | 🟡 Medium | 🔴 Hard |
 |:--------------:|:-------:|:---------:|:-------:|
-| TOTAL_SOLVED | EASY_COUNT | MEDIUM_COUNT | HARD_COUNT |
+| 105 | 47 | 53 | 5 |
 
 </div>
 
@@ -71,7 +71,7 @@ text DSA-Java │ ├── 1-two-sum ├── 58-length-of-last-word ├──
 
 ## 📈 Current Journey
 
-text Target      : 500 Problems Completed   : TOTAL_SOLVED Problems  Progress: ██████████░░░░░░░░░░░░░░░░░░░░ 
+text Target      : 500 Problems Completed   : 105 Problems  Progress: ██████████░░░░░░░░░░░░░░░░░░░░ 
 
 ---
 
