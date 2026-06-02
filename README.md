@@ -2,57 +2,81 @@
 
 <div align="center">
 
-## LeetCode Solutions in Java
+### LeetCode Solutions in Java
 
-Building strong problem-solving skills through consistent Data Structures & Algorithms practice.
+A curated collection of Data Structures & Algorithms problems solved using Java.
+
+---
+
+### 📊 Progress
+
+| 🎯 Total Solved | 🟢 Easy | 🟡 Medium | 🔴 Hard |
+|:--------------:|:-------:|:---------:|:-------:|
+| TOTAL_SOLVED | EASY_COUNT | MEDIUM_COUNT | HARD_COUNT |
 
 </div>
 
 ---
 
-## 📊 LeetCode Progress
+## 🎯 Milestones
 
-- 🎯 Total Solved: 105
-- 🟢 Easy: 47
-- 🟡 Medium: 53
-- 🔴 Hard: 5
-
----
-
-## 🎯 Goals
-
-- [ ] Solve 100 Problems
-- [ ] Solve 250 Problems
-- [ ] Solve 500 Problems
-- [ ] Solve 1000 Problems
+- [x] 100 Problems Solved
+- [ ] 200 Problems Solved
+- [ ] 300 Problems Solved
+- [ ] 400 Problems Solved
+- [ ] 500 Problems Solved
 
 ---
 
-## 📚 Topics Covered
+## 📚 Core Topics
 
-- Arrays
-- Strings
-- HashMap
-- HashSet
-- Linked List
-- Stack
-- Queue
-- Trees
-- Graphs
-- Binary Search
-- Dynamic Programming
-- Greedy Algorithms
-- Sliding Window
-- Two Pointers
-- Backtracking
-- Bit Manipulation
+<table>
+<tr>
+<td>📦 Arrays</td>
+<td>🔤 Strings</td>
+<td>🗺️ HashMap</td>
+</tr>
+
+<tr>
+<td>🔍 Binary Search</td>
+<td>🪟 Sliding Window</td>
+<td>👆 Two Pointers</td>
+</tr>
+
+<tr>
+<td>➕ Prefix Sum</td>
+<td>🌲 Backtracking</td>
+<td>📑 HashSet</td>
+</tr>
+</table>
 
 ---
 
-## ⭐ About
+## 🏆 Repository Features
 
-This repository contains my Java solutions to LeetCode problems.
+- ✅ Java Solutions
+- ✅ LeetCode Problem Statements
+- ✅ Difficulty Tracking
+- ✅ Interview Preparation
+- ✅ Organized Folder Structure
+- ✅ Continuous Progress Tracking
 
-Each problem is organized in its own folder and includes the original problem statement along with an accepted Java solution.
+---
 
-Happy Coding 🚀
+## 📂 Structure
+
+text DSA-Java │ ├── 1-two-sum ├── 58-length-of-last-word ├── 1013-fibonacci-number ├── ... │ └── README.md 
+
+---
+
+## 📈 Current Journey
+
+text Target      : 500 Problems Completed   : TOTAL_SOLVED Problems  Progress: ██████████░░░░░░░░░░░░░░░░░░░░ 
+
+---
+
+<div align="center">
+
+### ⭐ Keep Learning. Keep Building. Keep Solving.
+
+</div>
