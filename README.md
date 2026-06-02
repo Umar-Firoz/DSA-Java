@@ -10,7 +10,7 @@ A collection of LeetCode problems solved using Java to strengthen problem-solvin
 
 | 🎯 Total Solved | 🟢 Easy | 🟡 Medium | 🔴 Hard |
 |:--------------:|:-------:|:---------:|:-------:|
-| TOTAL_SOLVED | EASY_COUNT | MEDIUM_COUNT | HARD_COUNT |
+| 120 | 62 | 53 | 5 |
 
 </div>
 
@@ -69,7 +69,7 @@ text DSA-Java │ ├── 1-two-sum ├── 58-length-of-last-word ├──
 
 ## 📈 Current Journey
 
-text Target      : 500 Problems Completed   : TOTAL_SOLVED Problems  Progress ██████████░░░░░░░░░░░░░░░░░░░░ 
+text Target      : 500 Problems Completed   : 120 Problems  Progress ██████████░░░░░░░░░░░░░░░░░░░░ 
 
 ---
 
