@@ -20,22 +20,22 @@ Building strong problem-solving skills through consistent Data Structures & Algo
 <tr>
 <td align="center">
 <h3>🎯 Total Solved</h3>
-<h1>143</h1>
+<h1>0</h1>
 </td>
 
 <td align="center">
 <h3>🟢 Easy</h3>
-<h1>61</h1>
+<h1>0</h1>
 </td>
 
 <td align="center">
 <h3>🟡 Medium</h3>
-<h1>69</h1>
+<h1>0</h1>
 </td>
 
 <td align="center">
 <h3>🔴 Hard</h3>
-<h1>13</h1>
+<h1>0</h1>
 </td>
 </tr>
 </table>
