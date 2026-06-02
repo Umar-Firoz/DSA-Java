@@ -2,17 +2,15 @@
 
 <div align="center">
 
-### LeetCode Solutions in Java
+## LeetCode Solutions in Java
 
-A curated collection of Data Structures & Algorithms problems solved using Java.
+A collection of LeetCode problems solved using Java to strengthen problem-solving skills and prepare for coding interviews.
 
----
-
-### 📊 Progress
+### 📊 Progress Dashboard
 
 | 🎯 Total Solved | 🟢 Easy | 🟡 Medium | 🔴 Hard |
 |:--------------:|:-------:|:---------:|:-------:|
-| 105 | 47 | 53 | 5 |
+| TOTAL_SOLVED | EASY_COUNT | MEDIUM_COUNT | HARD_COUNT |
 
 </div>
 
@@ -38,15 +36,15 @@ A curated collection of Data Structures & Algorithms problems solved using Java.
 </tr>
 
 <tr>
+<td>📑 HashSet</td>
 <td>🔍 Binary Search</td>
 <td>🪟 Sliding Window</td>
-<td>👆 Two Pointers</td>
 </tr>
 
 <tr>
+<td>👆 Two Pointers</td>
 <td>➕ Prefix Sum</td>
 <td>🌲 Backtracking</td>
-<td>📑 HashSet</td>
 </tr>
 </table>
 
@@ -63,7 +61,7 @@ A curated collection of Data Structures & Algorithms problems solved using Java.
 
 ---
 
-## 📂 Structure
+## 📂 Repository Structure
 
 text DSA-Java │ ├── 1-two-sum ├── 58-length-of-last-word ├── 1013-fibonacci-number ├── ... │ └── README.md 
 
@@ -71,12 +69,25 @@ text DSA-Java │ ├── 1-two-sum ├── 58-length-of-last-word ├──
 
 ## 📈 Current Journey
 
-text Target      : 500 Problems Completed   : 105 Problems  Progress: ██████████░░░░░░░░░░░░░░░░░░░░ 
+text Target      : 500 Problems Completed   : TOTAL_SOLVED Problems  Progress ██████████░░░░░░░░░░░░░░░░░░░░ 
+
+---
+
+## ⭐ About
+
+This repository serves as a structured archive of my LeetCode journey.
+
+Each problem folder contains:
+- Problem statement
+- Difficulty information
+- Accepted Java solution
+
+The goal is to consistently improve problem-solving skills, strengthen DSA fundamentals, and prepare for technical interviews.
 
 ---
 
 <div align="center">
 
-### ⭐ Keep Learning. Keep Building. Keep Solving.
+### ⭐ Keep Learning • Keep Building • Keep Solving
 
 </div>
