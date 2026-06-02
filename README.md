@@ -12,16 +12,35 @@ Building strong problem-solving skills through consistent Data Structures & Algo
 
 ---
 
-# 📊 Progress Dashboard
+<div align="center">
 
-> ⚡ Automatically updated via GitHub Actions
+# 📊 LeetCode Progress
 
-| Metric | Count |
-|---------|---------|
-| 🎯 Total Solved | 0 |
-| 🟢 Easy | 0 |
-| 🟡 Medium | 0 |
-| 🔴 Hard | 0 |
+<table>
+<tr>
+<td align="center">
+<h3>🎯 Total Solved</h3>
+<h1>143</h1>
+</td>
+
+<td align="center">
+<h3>🟢 Easy</h3>
+<h1>61</h1>
+</td>
+
+<td align="center">
+<h3>🟡 Medium</h3>
+<h1>69</h1>
+</td>
+
+<td align="center">
+<h3>🔴 Hard</h3>
+<h1>13</h1>
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
